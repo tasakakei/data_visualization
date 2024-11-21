@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigDataViewer H</title>
+    <style>
+      body {
+        font-family:'Noto Sans JP',sans-serif;
+        background-color:#c5eaea;
+      }
+
+      .side {
+        background-color:#9dcce7;
+        width:200px;
+        height:800px;
+        text-align:center;
+      } 
+
+      .content {
+        background-color:#a0e2f2;
+        width:1280px;
+        height:800px;
+        text-align:center;
+        margin-left:10px;/*サイドバーとメインコンテンツの間に隙間                    をあけた*/
+      }
+
+      article {
+        display:flex;/*サイドバーとメインコンテンツを横並びにする                指定をした*/
+      }    </style>
+</head>
+<body>
+
+
+
+
+
+<h3>BigDataViewer Ver.0.5</h3>
+
+<h4>論文件数と市場ニュース件数を比較するツール</h4>
+<div>
+<hr>
+</div>
+<!--
+            <iframe
+              id   ="inlineFrameExample"
+              title="Inline Frame Example"
+              width ="1280"
+              height="720"
+              target="example"
+              > </iframe>
+<hr>
+-->
+
+
+<article>
+  <div class="side">
+    <p>サイドバー</p>
+      :main<br>
+
+<a href = "data/notation_category_arXiv_Full_plot2_2019_2024.html"           target="main">arXivSummery</a><br>
+<a href = "data/notation_category_prwire_arXiv_Full_plot2_2019_2024.html"                 target="main">PRwireSummery</a><br>
+<a href = "data/notation_category_businesswire_arXiv_Full_plot2_2019_2024.html"           target="main">BusinessWireSummery</a><br>
+GAI<br>
+<a href = "data/arXiv_Text-_Image-_Audio-_plot2_2019_2024.html"                 target="main">arXiv</a><br>
+<a href = "data/PRWire_category_Text-_Image-_Audio-_plot2_2019_2024.html"       target="main">PRWire</a><br>
+<a href = "data/BusinessWire_category_Text-_Image-_Audio-_plot2_2019_2024.html" target="main">BusinessWire</a><br>
+CAGR<br>
+<a href = "data/CAGR_prwire_CAGR_arxiv_plotly.html"       target="main">CAGR PRWire</a><br>
+<a href = "data/CAGR_businesswire_CAGR_arxiv_plotly.html" target="main">CAGRBusinessWire</a><br>
+<hr>
+:sub<br>
+<a href = "data/notation_category_arXiv_Full_plot2_2019_2024.html"           target="sub">arXivSummery</a><br>
+<a href = "data/notation_category_prwire_arXiv_Full_plot2_2019_2024.html"                 target="sub">PRwireSummery</a><br>
+<a href = "data/notation_category_businesswire_arXiv_Full_plot2_2019_2024.html"           target="sub">BusinessWireSummery</a><br>
+GAI<br>
+<a href = "data/arXiv_Text-_Image-_Audio-_plot2_2019_2024.html"                 target="sub">arXiv</a><br>
+<a href = "data/PRWire_category_Text-_Image-_Audio-_plot2_2019_2024.html"       target="sub">PRWire</a><br>
+<a href = "data/BusinessWire_category_Text-_Image-_Audio-_plot2_2019_2024.html" target="sub">BusinessWire</a><br>
+CAGR<br>
+<a href = "data/CAGR_prwire_CAGR_arxiv_plotly.html"       target="sub">CAGR PRWire</a><br>
+<a href = "data/CAGR_businesswire_CAGR_arxiv_plotly.html" target="sub">CAGRBusinessWire</a><br>
+  </div> 
+
+
+  <div class="content" name="example">
+    <!-- <p>メインコンテンツ</p> -->
+    <span>
+    <iframe name="main" width ="1280"
+    height="380">ここに表示したい</iframe>
+
+    <!-- <p>サブコンテンツ</p> -->
+    <iframe name="sub" width ="1280"
+    height="380">ここに表示したい</iframe>
+    
+  </div>
+
+
+</article>
+</body>
+</html>
